@@ -19,7 +19,7 @@ $action = get_var('action');
 $login_failed = FALSE;
 
 // check config has been set up
-if (!isset($config['username']) || !isset($config['hashed_password'])) {
+if (!(isset($config['username'])  && $config['username'] && isset($config['hashed_password']) && $config['hashed_password'])) {
     die('You have not edited config.php to include your username and hashed password!');
 }
 
