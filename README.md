@@ -35,7 +35,7 @@ Notes
 ---------------
 `phpajaxshell` just takes what you enter and passes it to the server to execute. You can't use interactive programs like vi, as they require real terminal emulation.
 
-The password hashing code uses Blowfish, so that must be installed on the remote server (and the local machine if you use that to run `password_hash.php`.
+The password hashing code uses Blowfish, so that must be installed on the remote server (and the local machine if you use that to run `password_hash.php`).
 
 Caveats
 ---------------
