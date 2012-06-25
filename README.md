@@ -26,6 +26,11 @@ You need to do a tiny bit of setting up before you can use phpajaxshell.
 4. Upload the whole directory to your web host
 5. Access the directory on the remote host with your web browser.
 
+Screencast
+---------------
+
+[Watch the run-through screencast here.](http://www.primesolid.com/blog/archives/Introducing-phpajaxshell/)
+
 Notes
 ---------------
 `phpajaxshell` just takes what you enter and passes it to the server to execute. You can't use interactive programs like vi, as they require real terminal emulation.
