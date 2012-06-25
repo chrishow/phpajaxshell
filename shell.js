@@ -197,9 +197,9 @@ function processLine() {
         } else if (line == 'logout') {
             logout();
             return;            
-        } else if (line.indexOf('vi ') == 0) {
+//        } else if (line.indexOf('vi ') == 0) {
 //            openEditor(line.substr(('vi ').length));
-            return;
+//            return;
         }
         $input.hide();
         $.ajax({
