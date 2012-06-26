@@ -33,9 +33,7 @@ if (isset($_SESSION['ajaxshell_logged_in']) && $_SESSION['ajaxshell_logged_in'])
 }
 
 if ($action == 'login') {
-    echo $config['hashed_password'] . '<br>';
     $salt = substr($config['hashed_password'], strpos($config['hashed_password'], ':') + 1);
-    echo $salt;
     if ($username == $config['username'] && (crypt($password, '$2a$07$' . $salt . '$') . ':' . $salt) == $config['hashed_password']) {
         $_SESSION['ajaxshell_logged_in'] = TRUE;
         $nonce = base64_encode(make_random_string());
